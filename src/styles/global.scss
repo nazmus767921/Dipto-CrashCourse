@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 @import "breakpoints";
 @import "spacings";
 @import "colors";
@@ -20,7 +22,8 @@
 
 :root {
   // || TypoGraphy
-  --ff-base: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --ff-base: "Josefin Sans", "Inter", -apple-system, BlinkMacSystemFont,
+    sans-serif;
 
   // || Colors
   @each $key, $value in $colors {
@@ -56,6 +59,9 @@
 html {
   font-size: 62.5%;
   font-family: var(--ff-base);
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased;
@@ -69,8 +75,8 @@ body {
   min-height: 100vh;
   min-width: 32rem;
   font-size: var(--fs-base);
-  color: var(--black-200);
-  background-color: var(--white-200);
+  color: var(--brand);
+  background-color: var(--white);
   overflow-x: hidden; // --fixes for horizontal scrolling
 }
 
